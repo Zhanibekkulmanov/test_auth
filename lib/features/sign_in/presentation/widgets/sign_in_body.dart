@@ -123,6 +123,7 @@ class _SignInBodyState extends State<_SignInBody> {
                           ),
                           MainButton(
                             title: LocaleKeys.enter.tr(),
+                            color: kcTertiary,
                             onPressed: () {
                               context.read<SignInBloc>().add(SignInEvent.login(LoginPhoneEntity(phone: vm.phoneController.text, password: vm.passwordController.text)));
                             },
